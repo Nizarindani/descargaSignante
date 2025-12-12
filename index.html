@@ -87,17 +87,6 @@ h1{font-size:22px;margin:6px 0 8px;line-height:1.05;color:var(--white)}
     <img src="signante.png" alt="Vista de SIGNANTE" />
   </div>
 </div>
-  <script>
-  (function(){
-    try{
-      var d = new Date(); d.setDate(d.getDate()+3);
-      var months = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
-      var s = d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
-      var el = document.getElementById('updateDate'); if(el) el.textContent = s;
-      var dismiss = document.getElementById('dismissBtn'); if(dismiss){ dismiss.addEventListener('click', function(){ var b=document.getElementById('updateBanner'); if(b) b.style.display='none'; }); }
-      var upd = document.getElementById('updateBtn'); if(upd){ upd.addEventListener('click', function(e){ e.preventDefault(); alert('Simulación: empezando actualización...'); }); }
-    }catch(e){console.warn('update-banner error',e)}
-  })();
-  </script>
+ 
 </body>
 </html>
